@@ -387,10 +387,10 @@ html, body {
 }
 
 #ProfNavigation {
-  border: solid;
-  display: flex;
+  border: none;
+  display: block;
   justify-content: space-between;
-  margin-top: 400px;
+  margin-top: 10px;
 }
 
 #Profimg {
