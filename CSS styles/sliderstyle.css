@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen&family=Space+Grotesk:wght@500&display=swap');
+
+
+.slider-container {
+    position: relative;
+}
+
+.Cyber-Breach-Container {
+    height: 112vh;
+    width: 100%;
+    background-color: #1B262C;
+    z-index: -1;
+}
+
+.slider-container .Cyber-Breach-Container .slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
+.slider-container .Cyber-Breach-Container .slide .slide-content {
+    flex: 1 1 350px;
+    animation: slideContent .4s linear .6s backwards;
+}
+
+@keyframes slideContent {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+.slider-container .Cyber-Breach-Container .slide .slide-image {
+    flex: 1 1 500px;
+    overflow: hidden;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    box-shadow: 0px 10px black;
+    z-index: 2;
+}
+
+.slider-container .Cyber-Breach-Container .slide .slide-image img {
+    width: 100%;
+    margin-bottom: -10px;
+    animation: slideImage .4s linear;
+}
+
+@keyframes slideImage {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+.slider-container .Cyber-Breach-Container .slide .slide-content h3 {
+    font-size: 35px;
+    font-family: 'Silkscreen', sans-serif;
+    color: #34ffff;
+}
+
+.slider-container .Cyber-Breach-Container .slide .slide-content p {
+    font-size: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    padding: 10px 0;
+}
+
+.slider-container .Cyber-Breach-Container .slide .slide-content .slide-btn {
+    margin-top: 10px;
+    display: inline-block;
+    background: #111;
+    color: white;
+    font-size: 17px;
+    padding: 9px 40px;
+}
+
+.slider-container .Cyber-Breach-Container .slide .slide-content .slide-btn:hover {
+    background: #333;
+}
+
+.slider-container .Cyber-Breach-Container {
+    display: none;
+}
+
+.slider-container .Cyber-Breach-Container.active {
+    display: block;
+}
+
+.slider-container .Cyber-Breach-Container:nth-child(1) .slide {
+    background: linear-gradient(90deg, #0b253d 68.5%, #34ffff 30.1%);
+}
+
+.slider-container .Cyber-Breach-Container:nth-child(2) .slide {
+    background: linear-gradient(90deg, #1A7F7F 68.5%, #ff9090 30.1%);
+}
+
+.slider-container .Cyber-Breach-Container:nth-child(3) .slide {
+    background: linear-gradient(90deg, #1A7F7F 68.5%, #99ffc0 30.1%);
+}
+
+.slider-container #prev,
+.slider-container #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    background: #333;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: border;
+}
+
+.slider-container #prev {
+    left: 20px;
+}
+
+.slider-container #next {
+    right: 20px;
+}
+
+.slider-container #prev:hover,
+.slider-container #next:hover {
+    background: #666;
+}
+
+@media (max-width:500px){
+    .slider-container #prev{
+        left: 0px;
+        top: 60%;
+    }
+
+    .slider-container #next{
+        right: 0px;
+        top: 60%;
+    }
+}

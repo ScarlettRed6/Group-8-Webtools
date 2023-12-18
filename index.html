@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sentinels</title>
+    <link rel="icon" href="Assets/Robot.png">
+    <link rel="stylesheet" href="CSS styles/style.css">
+    <link rel="stylesheet" href="CSS styles/sliderstyle.css">
+    <link rel="stylesheet" href="CSS styles/GlowingBtn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css' rel='stylesheet'>
+</head>
+<body>
+    <span class="shape1"></span>
+
+    <div class="navBar">
+        <div class="logo">
+            <a class="Lcont" href="#">
+                <img src="Assets/Robot.png">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articles<i class="gg-chevron-down"></i> </a>
+            
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="#">CyberSecurity</a>
+                            <div class="dropdown_menu2">
+                                <ul>
+                                    <li><a href="HTMLpages/Subtopic1.html">Malwares</a></li>
+                                    <li><a href="HTMLpages/Subtopic2.html">Subtopic2</a></li>
+                                    <li><a href="HTMLpages/Subtopic3.html">Subtopic3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">DataBreach</a>
+                            <div class="dropdown_menu3">
+                                <ul>
+                                    <li><a href="HTMLpages/Subtopic4.html">Subtopic4</a></li>
+                                    <li><a href="HTMLpages/Subtopic5.html">Subtopic5</a></li>
+                                    <li><a href="HTMLpages/Subtopic6.html">Subtopic6</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </div>
+    <div class="hover-button">
+        <div class="outer button">
+            <button>EXPLORE</button>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="header">
+        <img class="LdataSent" src="Assets/DataSentinelsLogo.png">
+        <video autoplay loop muted plays-inline class="head-video">
+            <source src="Assets/CyberGlobeVid.mp4">
+        </video>
+    </div>
+    <div class="slider-container">
+        <div class="Cyber-Breach-Container active">
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>Be cyber-ready!</h3>
+                    <p>Cybercriminals initiate hundreds of attacks that happen all around the world, 
+                        leaving millions of dollars-worth of damage and taking gigabytes of user data 
+                        with them. Arm yourself with the right knowledge to protect yourself from 
+                        these attacks. Click the button below to learn more about the dangers that 
+                        plague the cyberspace and how to keep you, your system, and your data away 
+                        from prying eyes.</p>
+                    <a href="#"><button class="slide-btn">Learn More</button></a>
+                </div>
+                <div class="slide-image">
+                    <img src="Assets/CyberSecurityTopics/Cyber Security without information below.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="Cyber-Breach-Container">
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>2. Website design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Corporis neque eveniet maiores aspernatur! Veritatis, eos similique 
+                    corrupti commodi officia ducimus, reiciendis, labore exercitationem 
+                    quos porro deserunt optio ipsum? Expedita, eos.</p>
+                    <a href="#"><button class="slide-btn">Learn More</button></a>
+                </div>
+                <div class="slide-image">
+                    <img src="Assets/ArticleHeadings_SubtopicImages/CyberSecurityHeading.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="Cyber-Breach-Container">
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>3. Website responsive</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Corporis neque eveniet maiores aspernatur! Veritatis, eos similique 
+                    corrupti commodi officia ducimus, reiciendis, labore exercitationem 
+                    quos porro deserunt optio ipsum? Expedita, eos.</p>
+                    <a href="#"><button class="slide-btn">Learn More</button></a>
+                </div>
+                <div class="slide-image">
+                    <img src="Assets/WHAT YOU SEE IS NOT TRULY WHAT YOU GET.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <button id="prev" onclick="prev()"> < </button>
+        <button id="next" onclick="next()"> > </button>
+
+    </div>
+    <div class="summary-aboutUs" id="aboutUs">
+        <div class="aboutUs-sumContent">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dicta harum odio quia recusandae fuga incidunt voluptate 
+                totam magnam aliquid amet, repellat, modi ipsam ut sit 
+                itaque! Velit nemo ut tenetur! Lorem ipsum, dolor sit 
+                amet consectetur adipisicing elit. Et soluta, adipisci 
+                reprehenderit amet debitis optio accusamus neque dolorem 
+                quibusdam molestiae iste? Fugiat, quam nihil! Totam omnis
+                officia error? Quasi, quidem? 
+            </p>
+            <img src="Assets/Portrait design1.png" alt="">
+        </div>
+        <div class="abts-btn">
+            <a href="#" style="--color: #34ffff"><span>More Details</span><i></i></a>
+          </div>
+
+    </div>
+    <footer id="footer">
+        <div class="foot-content">
+            <div class="left box">
+                <h2>Social Media</h2>
+                <div class="fContent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Illum exercitationem sed enim repudiandae, magnam ratione 
+                        labore sapiente ipsam ducimus? Ipsa, repellat architecto 
+                        at voluptas assumenda cupiditate quod! Dolorum, vitae. 
+                        Omnis!</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="fContent">
+                    <div class="fPlace">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="fText">ayo random stuff, ahh yes</span>
+                    </div>
+                    <div class="fPhone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="fText">+6399999977</span>
+                    </div>
+                    <div class="fEmail">
+                        <span class="fas fa-envelope"></span>
+                        <span class="fText">@ayothismaEmail.ambatunut</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right box">
+                <h2>Contact Us</h2>
+                <div class="fContent">
+                    <form action="#">
+                        <div class="fEmail">
+                            <div class="fText">Email *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="fText">Message *</div>
+                            <textarea cols="25" rows="2" required></textarea>
+                        </div>
+                        <div class="fBtn">
+                            <a href="#" style="--color: #921313"><span>Submit</span><i></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="fBottom">
+        <center>
+            <span class="credit">Created By <a href="#">Data Sentinels</a> | </span>
+            <span class="far fa-copyright"></span><span>2023 ALL OUR RIGHTS RESERVED.</span>
+        </center>
+
+    </div>
+
+    <script src="logic.js"></script>   
+</body>
+</html>

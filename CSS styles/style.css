@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen&family=Space+Grotesk:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+}
+
+.header .LdataSent {
+    position: absolute;
+    height: 500px;
+    top: 100px;
+    left: 0px;
+    z-index: 1;
+}
+
+.header .head-video {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.navBar {
+    background-color: #111 ;
+    font-family: 'Bebas Neue', sans-serif;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10;
+    top: 0px;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.logo .Lcont img {
+    height: 63px;
+    width: 80px;
+    display: flex;
+    left: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navBar ul li {
+    padding: 10px 60px;
+    position: relative;
+}
+
+.navBar ul li i {
+    margin: -29px 80px;
+    position: absolute;
+}
+
+
+.navBar ul li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+.navBar ul li::after {
+    content: '';
+    position: absolute;
+    background-color: #34ffff;
+    height: 3px;
+    width: 0px;
+    left: 50px;
+    bottom: 7px;
+    transition: all 0.5s ease;
+}
+
+.navBar ul li:hover::after {
+    width: 50%;
+}
+
+.navBar ul li a:hover {
+    color: #34ffff;
+    
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.navBar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top: 100%;
+    background-color: #1B262C;
+}
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown_menu2{
+    display: none;
+}
+
+.navBar ul li .dropdown_menu ul li:hover .dropdown_menu2 {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 150px;
+    top: 50%;
+    background-color: #304550;
+}
+
+.dropdown_menu3{
+    display: none;
+}
+
+.navBar ul li .dropdown_menu ul li:hover .dropdown_menu3 {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 150px;
+    top: 5px;
+    background-color: #151d22;
+}
+
+.summary-aboutUs {
+    height: 100vh;
+    width: 100%;
+    background-color: #151d22;
+    
+}
+
+.summary-aboutUs .aboutUs-sumContent{
+    position: relative;
+    top: 180px;
+    left: 1000px;
+    height: 70vh;
+    width: 470px;
+    font-size: 25px;
+    color: white;
+}
+
+.summary-aboutUs .aboutUs-sumContent h2{
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: -100px;
+}
+
+.summary-aboutUs .aboutUs-sumContent p{
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    top: -10px;
+}
+
+.summary-aboutUs .aboutUs-sumContent img {
+    border: solid;
+    color: #34ffff;
+    border-radius: 20px;
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    right: 800px;
+    bottom: 20px;
+}
+    
+
+.shape1 {
+    height: 600px;
+    width: 120px;
+    background-color: #1c2727;
+    position: absolute;
+    z-index: 1;
+    top: 900px;
+    right: 440px;
+}
+
+footer {
+    height: 50vh;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    background-color: #111;
+}
+
+.foot-content {
+    display: flex;
+}
+
+.foot-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .fContent {
+    margin: 20px 0 0 0;
+}
+
+.left .fContent p {
+    text-align: justify;
+}
+
+.left .fContent .social {
+    margin: 20px 0 0 0;
+}
+
+.left .fContent .social a{
+    padding: 0 2px;
+}
+
+.left .fContent .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .fContent .social a span:hover {
+    background: #262b2b;
+}
+
+.center .fContent .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    margin: 3px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .fContent .fas:hover {
+    background: #262b2b;
+}
+
+.center .fContent .fText {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .fContent .fPhone {
+    margin: 10px 0;
+}
+
+.right form .fText {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    color: #34ffff;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus, 
+.right form textarea:focus{
+    outline-color: #34ffff;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.fBottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.fBottom center span {
+    color: #656565;
+}
+
+.fBottom center a {
+    color: #34ffff;
+    text-decoration: none;
+}
+
+.fBottom center a:hover {
+    text-decoration: underline;
+}

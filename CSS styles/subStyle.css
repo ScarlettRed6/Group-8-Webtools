@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen&family=Space+Grotesk:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    height: 50vh;
+    width: 100%;
+    border-bottom: solid;
+}
+
+.header img {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+
+.navBar {
+    background-color: #111 ;
+    font-family: 'Bebas Neue', sans-serif;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10;
+    top: 0px;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.logo .Lcont img {
+    height: 63px;
+    width: 80px;
+    display: flex;
+    left: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navBar ul li {
+    padding: 10px 60px;
+    position: relative;
+}
+
+.navBar ul li i {
+    margin: -29px 80px;
+    position: absolute;
+}
+
+
+.navBar ul li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+.navBar ul li::after {
+    content: '';
+    position: absolute;
+    background-color: #34ffff;
+    height: 3px;
+    width: 0px;
+    left: 50px;
+    bottom: 7px;
+    transition: all 0.5s ease;
+}
+
+.navBar ul li:hover::after {
+    width: 50%;
+}
+
+.navBar ul li a:hover {
+    color: #34ffff;
+    
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.navBar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top: 100%;
+    background-color: #1B262C;
+}
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown_menu2{
+    display: none;
+}
+
+.navBar ul li .dropdown_menu ul li:hover .dropdown_menu2 {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 150px;
+    top: 50%;
+    background-color: #304550;
+}
+
+.dropdown_menu3{
+    display: none;
+}
+
+.navBar ul li .dropdown_menu ul li:hover .dropdown_menu3 {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 150px;
+    top: 5px;
+    background-color: #151d22;
+}
+
+.subtopic-container {
+    position: relative;
+    margin-top: 229px;
+    height: 200vh;
+    width: 100%;
+    background-color: #244150;
+}
+
+.subtopic-container .content .topic-heading {
+    position: relative;
+    border-radius:  10px;
+    margin-top: 40px;
+    left: 360px;
+    height: 500px;
+    width: 900px;
+}
+
+.subtopic-container .content h2,pre{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 66px;
+    width: 70%;
+    color: #34ffff;
+    display: inline-block;
+    position: relative;
+    left: 360px;
+    top: 60px;
+
+}
+
+.subtopic-container .content pre {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #afd6ee;
+    font-size: 22px;
+    left: 280px;
+    top: 80px;
+}
+
