@@ -161,9 +161,11 @@ body {
 
 .mission-container .mission-objective .mission-image .mission-card p {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 600;
     font-family: 'Space Grotesk', sans-serif;
     margin: 8px;
+    color: #2b303d;
 }
 
 /* This is where the Profile slider begins */
@@ -213,8 +215,14 @@ body {
     letter-spacing: 10px;
 }
 
+.pSlider .pList .pItem .pContent p:nth-child(3) {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
 .pSlider .pList .pItem .pContent h2 {
-    font-size: 100px;
+    font-size: 70px;
     margin: 0;
 }
 

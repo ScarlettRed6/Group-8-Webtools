@@ -14,19 +14,32 @@ body {
     font-size: 100%;
     font-size: 16px;
     line-height: 1.5;
-    background: #f0f4fb;
+    background-color: #22447b;
     -webkit-font-smoothing: antialiased;
     -mos-osx-font-smoothing: grayscale;
 }
 
+.header img:first-child {
+    box-shadow: 0 10px 20px black;
+    width: 100%;
+}
+
+.header .BO-Articles {
+    position: absolute;
+    height: 100px;
+    top: 280px;
+    left: 100px;
+}
+
 .site-container {
     margin: 2rem auto;
+    margin-top: -100px;
     max-width: calc(100% - 80px);
 }
 
 .article-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2rem;
 }
 
@@ -46,10 +59,12 @@ body {
     background: white;
     border-radius: 20px;
     transition: 0.3s;
+    border: solid #34ffff;
+    border-radius: 20px;
 }
 
 .article-card:hover {
-    box-shadow: 0 4px 20px 0 black;
+    box-shadow: 0 5px 30px 0 black;
     cursor: pointer;
 }
 
@@ -58,17 +73,25 @@ body {
 }
 
 .article-content .card-category {
-    font-size: 0.875rem;
+    font-size: 20px;
+    font-family: 'Silkscreen', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 600;
-    color: #6b82a7;
+    color: #252d3a;
     display: block;
     text-decoration: none;
+    transition: 0.4s;
+}
+
+.article-content .card-category:hover {
+    font-size: 30px;
+    color: #25c4c4;
 }
 
 .article-content .card-title {
     margin: 1rem 0;
+    font-family: 'Space Grotesk', sans-serif;
     color: #22447b;
 }
 

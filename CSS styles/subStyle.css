@@ -145,7 +145,7 @@ body {
 .subtopic-container {
     position: relative;
     margin-top: 229px;
-    height: 200vh;
+    height: 300vh;
     width: 100%;
     background-color: #244150;
 }
@@ -159,21 +159,34 @@ body {
     width: 900px;
 }
 
-.subtopic-container .content h2,pre{
+.subtopic-container .content h2{
     font-family: 'Space Grotesk', sans-serif;
     font-size: 66px;
+    margin-top: 40px;
     width: 70%;
     color: #34ffff;
     display: inline-block;
     position: relative;
-    left: 360px;
+    left: 260px;
     top: 60px;
 
 }
 
-.subtopic-container .content pre {
+.subtopic-container .content p {
+    position: relative;
     font-family: 'Space Grotesk', sans-serif;
     color: #afd6ee;
+    width: 70%;
+    font-size: 22px;
+    left: 280px;
+    top: 80px;
+}
+
+.subtopic-container .content pre {
+    position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #afd6ee;
+    width: 70%;
     font-size: 22px;
     left: 280px;
     top: 80px;
