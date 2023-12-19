@@ -191,16 +191,6 @@ body {
 }
     
 
-.shape1 {
-    height: 600px;
-    width: 120px;
-    background-color: #1c2727;
-    position: absolute;
-    z-index: 1;
-    top: 900px;
-    right: 440px;
-}
-
 footer {
     height: 50vh;
     width: 100%;
